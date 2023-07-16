@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Properties Example</title>
+  <style>
+    /* CSS using :root and custom properties */
+    :root {
+      --primary-color: #007bff;
+      --secondary-color: #f2f2f2;
+      --ball-size: 50px;
+      --ball-color: #ff6347;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .ball {
+      width: var(--ball-size);
+      height: var(--ball-size);
+      background-color: var(--ball-color);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="ball"></div>
+  <!-- You can add more HTML content here as needed -->
+</body>
+</html>
